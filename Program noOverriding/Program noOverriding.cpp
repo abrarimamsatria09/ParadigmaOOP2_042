@@ -3,7 +3,7 @@ using namespace std;
 
 class baseClass {
 public:
-	virtual void perkenalan() final {
+	virtual void perkenalan() {
 		cout << "Hallo saya function dari base class";
 	}
 };
@@ -13,3 +13,9 @@ public:
 		cout << "Hallo saya function dari derived class";
 	}
 };
+int main() {
+	derivedClass a;
+	a.perkenalan();
+
+	return 0;
+}
